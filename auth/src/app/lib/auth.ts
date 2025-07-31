@@ -28,14 +28,13 @@ const config ={
         },
     },
     session: {
-        strategy: "jwt",
+        strategy: "jwt" as const,
     },
     pages: {
         signIn: "/auth/signin",
     },
+    
+    trustHost: true,
 } satisfies NextAuthConfig
 
 export const { handlers, auth, signIn, signOut} =NextAuth(config)
-
-//Export config for middelware if needed
-export {config as authConfig}
