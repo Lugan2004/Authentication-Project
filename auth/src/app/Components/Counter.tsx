@@ -24,10 +24,10 @@ export default function COunter(){
     }
     return (
         <div>
-            <h1>count: {count}</h1>
+            <h1 className="text-3xl font-bold center">count: {count}</h1>
 
-            <button onClick={handleIncrement}>Increment</button>
-            <button onClick={handleDecrement}>Decrement</button>
+            <button onClick={handleIncrement} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 my-2 mx-2 px-4 rounded">Increment</button>
+            <button onClick={handleDecrement} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 my-2 mx-2 px-4 rounded">Decrement</button>
         </div>
     )
 }
